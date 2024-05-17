@@ -1,2 +1,4 @@
-# tasks_learn_react
-tasks_learn_react
+# React JS
+| № | **Task**                                                                | **Description**                                        |
+|---|-------------------------------------------------------------------------|--------------------------------------------------------|
+| 1 | **[Task1](https://github.com/iamseryy/tasks_learn_react/tree/main/task1)** | Знакомство с React и первые компоненты. Работа с JSX |
