@@ -18,4 +18,4 @@ const [comments, setComments] = useState([
 ]);
 ```
 
-## Решение: 
+## Решение: commentslist-app project

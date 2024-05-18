@@ -1,0 +1,15 @@
+.comment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.comment {
+  gap: 10px;
+}
+
+/*# sourceMappingURL=comments.module.css.map */
