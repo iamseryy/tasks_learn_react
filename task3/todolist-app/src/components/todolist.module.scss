@@ -1,0 +1,14 @@
+%flex_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.task {
+  @extend %flex_center;
+  gap: 10px;
+}
