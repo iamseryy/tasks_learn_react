@@ -1,5 +1,6 @@
 import {useState} from "react";
-import {Button, TextField} from "@mui/material";
+import {Button, TextField, Card, CardContent, Typography, IconButton, CardHeader} from "@mui/material"
+import DeleteIcon from "@mui/icons-material/Delete"
 import styles from './todolist.module.scss'
 
 export const TodoList = () => {
@@ -38,8 +39,19 @@ export const TodoList = () => {
             <ul>
                 {taskList.map(task => (
                     <li className={styles.task} key={task.id} id={task.id}>
-                        <p>{task.task}</p>
-                        <button onClick={deleteTask}>X</button>
+                        <Card className={styles.card}>
+                            <CardContent className={styles.content}>
+                                <Typography variant="h6">
+                                    {task.task}
+                                </Typography>
+                                <div className={styles.delete}>
+                                    <IconButton aria-label="delete" color="primary" onClick={deleteTask}>
+                                        <DeleteIcon />
+                                    </IconButton>
+                                </div>
+
+                            </CardContent>
+                        </Card>
                     </li>
                 ))}
             </ul>
