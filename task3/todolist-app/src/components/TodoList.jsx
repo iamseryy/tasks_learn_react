@@ -1,7 +1,20 @@
-import {useState} from "react";
-import {Button, TextField, Card, CardContent, Typography, IconButton, CardHeader} from "@mui/material"
+import React, {useState} from "react"
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import {Button, TextField, Card, CardContent, Typography, IconButton, CardHeader, CardActions} from "@mui/material"
 import DeleteIcon from "@mui/icons-material/Delete"
 import styles from './todolist.module.scss'
+
+
+const theme = createTheme({
+    components: {
+        MuiCard: {
+            styleOverrides: {
+                root: { margin: 8, width: 345},
+            },
+        },
+    },
+})
+
 
 export const TodoList = () => {
     const [task, setTask] = useState('')
@@ -24,7 +37,7 @@ export const TodoList = () => {
 
     return (
         <div>
-            <div>
+            <div className={styles.form}>
                 <TextField
                     label="Add task"
                     variant="standard"
@@ -39,19 +52,23 @@ export const TodoList = () => {
             <ul>
                 {taskList.map(task => (
                     <li className={styles.task} key={task.id} id={task.id}>
-                        <Card className={styles.card}>
-                            <CardContent className={styles.content}>
-                                <Typography variant="h6">
-                                    {task.task}
-                                </Typography>
-                                <div className={styles.delete}>
-                                    <IconButton aria-label="delete" color="primary" onClick={deleteTask}>
+                        <ThemeProvider theme={theme}>
+                            <Card>
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="h2">
+                                        Task {task.id + 1}
+                                    </Typography>
+                                    <Typography variant="body2" color="textSecondary" component="p">
+                                        {task.task}
+                                    </Typography>
+                                </CardContent>
+                                <CardActions disableSpacing>
+                                    <IconButton aria-label="delete" onClick={deleteTask}>
                                         <DeleteIcon />
                                     </IconButton>
-                                </div>
-
-                            </CardContent>
-                        </Card>
+                                </CardActions>
+                            </Card>
+                        </ThemeProvider>
                     </li>
                 ))}
             </ul>
