@@ -1,0 +1,16 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.menu {
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+/*# sourceMappingURL=menu.module.css.map */
