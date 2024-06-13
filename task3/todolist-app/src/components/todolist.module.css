@@ -1,4 +1,4 @@
-.task {
+.form, .task {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,23 +12,9 @@ ul {
   gap: 10px;
 }
 
-.card {
-  maxWidth: 300px;
-  margin: auto;
-  transition: 0.3s;
-  boxShadow: 0 8px 40px -12px rgba(0, 0, 0, 0.3);
-}
-.cardhover {
-  boxShadow: "0 16px 70px -12.125px rgba(0,0,0,0.3)";
-}
-
-.content {
-  textAlign: left;
-  padding: 10px;
-}
-
-.delete {
-  textAlign: right;
+.form {
+  gap: 30px;
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=todolist.module.css.map */

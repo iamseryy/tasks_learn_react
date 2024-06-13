@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["todolist.module.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA;;;AAGF;EACE;;;AAGF;EAEE;;;AAGF;EACE;EACA;EACA;EACA;;AAEA;EACE;;;AAIJ;EACE;EACA;;;AAGF;EACE","file":"todolist.module.css"}
+{"version":3,"sourceRoot":"","sources":["todolist.module.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA;;;AAGF;EACE;;;AAGF;EAEE;;;AAEF;EAEE;EACA","file":"todolist.module.css"}
