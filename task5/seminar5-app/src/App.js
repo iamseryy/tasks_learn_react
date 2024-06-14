@@ -1,11 +1,13 @@
 import './App.css';
-import Counter from "./components/Counter";
+import ThemeSwitcher from "./components/ThemeSwitcher";
 
 
 function App() {
   return (
     <div className="App">
-        <Counter />
+        <div>
+            <ThemeSwitcher />
+        </div>
     </div>
   );
 }

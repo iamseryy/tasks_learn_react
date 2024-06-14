@@ -1,13 +1,16 @@
-import {INCREMENT, DECREMENT} from "./types";
+import {
+    LIGHT_THEME,
+    DARK_THEME
+} from "./types";
 
-export function incrementCounter() {
+export function switchToLight() {
     return {
-        type: INCREMENT
+        type: LIGHT_THEME
     }
 }
 
-export function decrementCounter() {
+export function switchToDark() {
     return {
-        type: DECREMENT
+        type: DARK_THEME
     }
 }

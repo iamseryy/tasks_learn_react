@@ -1,7 +1,7 @@
 import {combineReducers} from "redux"
-import {counterReducer} from "./counterReducer";
+import {themeSwitcherReducer} from "./themeSwitcherReducer"
 
 
 export const rootReducer = combineReducers({
-    counterReducer
+    themeSwitcherReducer
 })

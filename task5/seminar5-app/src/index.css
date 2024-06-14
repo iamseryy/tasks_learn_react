@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +12,22 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+:root {
+  --background-color: white;
+  --foreground-color: blue;
+  --primary-text-color: black;
+  --secondary-text-color: white;
+  --switcher-bg: #f0eb9d;
+  --switcher-fg: #ffd000;
+}
+
+[data-theme="dark"] {
+  --background-color: black;
+  --foreground-color: blue;
+  --primary-text-color: white;
+  --secondary-text-color: black;
+  --switcher-bg: #283452;
+  --switcher-fg: #00a6ff;
 }
